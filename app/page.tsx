@@ -1,9 +1,9 @@
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { QRFeatures } from "@/components/qr-features";
-import { Benefits } from "@/components/benefits";
-import { Steps } from "@/components/steps";
-import { FAQ } from "@/components/faq";
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import { QRFeatures } from '@/components/qr-features';
+import { Benefits } from '@/components/benefits';
+import { Steps } from '@/components/steps';
+import { FAQ } from '@/components/faq';
 
 export default function Home() {
   return (
@@ -18,9 +18,11 @@ export default function Home() {
             <p className="text-lg sm:text-xl text-text-600 mb-8 max-w-2xl mx-auto">
               Create, customize, and manage your QR codes effortlessly
             </p>
-            <Button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-6 text-lg">
-              Create QR Code
-            </Button>
+            <a href="#qr-features">
+              <Button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-6 text-lg">
+                Create QR Code
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -42,7 +44,7 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold mb-4">QR Store</h3>
+              <h3 className="font-bold mb-4">QR Koala</h3>
               <p className="text-sm text-background-300">
                 Professional QR code generator for businesses and individuals
               </p>

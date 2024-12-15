@@ -1,13 +1,16 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Navbar } from "@/components/navbar";
+import './globals.css';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import { Navbar } from '@/components/navbar';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "QR Store - Create and Manage QR Codes",
-  description: "Professional QR code generator for businesses and individuals",
+  title: 'QR Store - Create and Manage QR Codes',
+  description: 'Professional QR code generator for businesses and individuals',
+  icons: {
+    icon: '/assets/logo.svg'
+  }
 };
 
 export default function RootLayout({
