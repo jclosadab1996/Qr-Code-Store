@@ -18,11 +18,9 @@ export default function Home() {
             <p className="text-lg sm:text-xl text-text-600 mb-8 max-w-2xl mx-auto">
               Create, customize, and manage your QR codes effortlessly
             </p>
-            <a href="#qr-features">
-              <Button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-6 text-lg">
-                Create QR Code
-              </Button>
-            </a>
+            <Button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-6 text-lg">
+              Create QR Code
+            </Button>
           </div>
         </div>
       </section>

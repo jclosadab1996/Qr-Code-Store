@@ -8,9 +8,6 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'QR Store - Create and Manage QR Codes',
   description: 'Professional QR code generator for businesses and individuals',
-  icons: {
-    icon: '/assets/logo.svg'
-  }
 };
 
 export default function RootLayout({
