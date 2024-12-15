@@ -7,6 +7,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { URLForm } from '@/components/qr-forms/url-form';
 import { WiFiForm } from '@/components/qr-forms/wifi-form';
 import { VCardForm } from '@/components/qr-forms/vcard-form';
+import { PDFForm } from '@/components/qr-forms/pdf-form'
+import { MenuForm } from '@/components/qr-forms/menu-form'
+
 
 const downloadQRCode = (format: 'png' | 'svg', qrRef: any) => {
   if (!qrRef.current) return;
@@ -40,6 +43,10 @@ const getFormComponent = (type: string, onValueChange: (value: string) => void) 
       return <WiFiForm onValueChange={onValueChange} />;
     case 'vcard':
       return <VCardForm onValueChange={onValueChange} />;
+      case 'menu':
+        return <MenuForm onValueChange={onValueChange} />;
+      case 'pdf':
+        return <PDFForm onValueChange={onValueChange} />;
     default:
       return <URLForm onValueChange={onValueChange} />;
   }
