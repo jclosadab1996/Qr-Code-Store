@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { Button } from '@/components/ui/button';
+import { Button } from "@/components/ui/button";
 
 export default function CuentaPage() {
   return (
@@ -9,7 +9,7 @@ export default function CuentaPage() {
 
       <div className="bg-white rounded-lg p-6 space-y-6">
         <h2 className="text-xl font-semibold">Información personal</h2>
-        
+
         <div className="grid grid-cols-2 gap-6">
           <div>
             <label className="block text-sm font-medium text-text-700 mb-1">
@@ -21,7 +21,7 @@ export default function CuentaPage() {
               className="w-full p-2 border rounded-md"
             />
           </div>
-          
+
           <div>
             <label className="block text-sm font-medium text-text-700 mb-1">
               Apellido
@@ -32,17 +32,14 @@ export default function CuentaPage() {
               className="w-full p-2 border rounded-md"
             />
           </div>
-          
+
           <div>
             <label className="block text-sm font-medium text-text-700 mb-1">
               Correo electrónico
             </label>
-            <input
-              type="email"
-              className="w-full p-2 border rounded-md"
-            />
+            <input type="email" className="w-full p-2 border rounded-md" />
           </div>
-          
+
           <div>
             <label className="block text-sm font-medium text-text-700 mb-1">
               Teléfono
@@ -55,14 +52,12 @@ export default function CuentaPage() {
           </div>
         </div>
 
-        <Button className="bg-black text-white">
-          Actualizar
-        </Button>
+        <Button className="bg-black text-white">Actualizar</Button>
       </div>
 
       <div className="bg-white rounded-lg p-6 space-y-6">
         <h2 className="text-xl font-semibold">Idioma</h2>
-        
+
         <div>
           <label className="block text-sm font-medium text-text-700 mb-1">
             Idioma
@@ -73,16 +68,14 @@ export default function CuentaPage() {
           </select>
         </div>
 
-        <Button className="bg-black text-white">
-          Actualizar
-        </Button>
+        <Button className="bg-black text-white">Actualizar</Button>
       </div>
 
       <div className="flex justify-between">
         <Button variant="outline" className="border-text-600 text-text-600">
           Cerrar sesión
         </Button>
-        
+
         <Button variant="outline" className="border-red-600 text-red-600">
           Eliminar cuenta
         </Button>

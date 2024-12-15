@@ -1,9 +1,9 @@
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { QRFeatures } from '@/components/qr-features';
-import { Benefits } from '@/components/benefits';
-import { Steps } from '@/components/steps';
-import { FAQ } from '@/components/faq';
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { QRFeatures } from "@/components/qr-features";
+import { Benefits } from "@/components/benefits";
+import { Steps } from "@/components/steps";
+import { FAQ } from "@/components/faq";
 
 export default function Home() {
   return (
@@ -13,13 +13,13 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-text-900 mb-6">
-              Powerful yet Simple QR Code Generator
+              Generador de códigos QR potente y simple
             </h1>
             <p className="text-lg sm:text-xl text-text-600 mb-8 max-w-2xl mx-auto">
-              Create, customize, and manage your QR codes effortlessly
+              Crea, personaliza y gestiona tus códigos QR sin esfuerzo
             </p>
             <Button className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-6 text-lg">
-              Create QR Code
+              Crear código QR
             </Button>
           </div>
         </div>
@@ -42,33 +42,33 @@ export default function Home() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold mb-4">QR Koala</h3>
+              <h3 className="font-bold mb-4">QR Store</h3>
               <p className="text-sm text-background-300">
-                Professional QR code generator for businesses and individuals
+                Generador de códigos QR profesional para empresas y particulares
               </p>
             </div>
             <div>
-              <h3 className="font-bold mb-4">Resources</h3>
+              <h3 className="font-bold mb-4">Recursos</h3>
               <ul className="space-y-2">
-                <li>Create QR Code</li>
-                <li>Documentation</li>
-                <li>API Reference</li>
+                <li>Crear código QR</li>
+                <li>Documentación</li>
+                <li>Referencia de API</li>
               </ul>
             </div>
             <div>
               <h3 className="font-bold mb-4">Legal</h3>
               <ul className="space-y-2">
-                <li>Terms of Service</li>
-                <li>Privacy Policy</li>
-                <li>Cookie Policy</li>
+                <li>Condiciones de servicio</li>
+                <li>política de privacidad</li>
+                <li>Politica de información</li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4">Contact</h3>
+              <h3 className="font-bold mb-4">Contacto</h3>
               <ul className="space-y-2">
-                <li>Support</li>
-                <li>Sales</li>
-                <li>Partnership</li>
+                <li>Soporte</li>
+                <li>Ventas</li>
+                <li>Socios</li>
               </ul>
             </div>
           </div>

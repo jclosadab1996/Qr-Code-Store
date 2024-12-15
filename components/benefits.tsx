@@ -1,20 +1,23 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 const benefits = [
   {
-    title: 'Track and analyze',
-    description: 'Get detailed insights with real-time tracking of your QR codes performance. Monitor scans, locations, and user behavior to optimize your campaigns.',
-    icon: '/assets/analytics-icon.svg',
+    title: "Seguimiento y análisis",
+    description:
+      "Obtén información detallada con el seguimiento en tiempo real del rendimiento de tus códigos QR. Monitorea los escaneos, las ubicaciones y el comportamiento de los usuarios para optimizar tus campañas.",
+    icon: "/assets/analytics-icon.svg",
   },
   {
-    title: 'Edit after printing',
-    description: 'Never worry about outdated QR codes. Update your content anytime, even after your QR codes have been printed and distributed.',
-    icon: '/assets/edit-icon.svg',
+    title: "Editar después de imprimir",
+    description:
+      "No se preocupe nunca por los códigos QR obsoletos. Actualice su contenido en cualquier momento, incluso después de que los códigos QR se hayan impreso y distribuido.",
+    icon: "/assets/edit-icon.svg",
   },
   {
-    title: 'Complete customization',
-    description: 'Make your QR codes unique with custom colors, logos, and designs. Match your brand identity perfectly with our advanced customization tools.',
-    icon: '/assets/customize-icon.svg',
+    title: "Personalización completa",
+    description:
+      "Haga que sus códigos QR sean únicos con colores, logotipos y diseños personalizados. Combine perfectamente su identidad de marca con nuestras herramientas de personalización avanzadas.",
+    icon: "/assets/customize-icon.svg",
   },
 ];
 
@@ -23,12 +26,15 @@ export function Benefits() {
     <section className="py-16 sm:py-24 bg-background-50 w-full">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-text-900 mb-4 sm:mb-6">Why Choose Our Platform</h2>
+          <h2 className="text-3xl sm:text-4xl font-bold text-text-900 mb-4 sm:mb-6">
+            ¿Por qué elegir nuestra plataforma?
+          </h2>
           <p className="text-lg sm:text-xl text-text-600">
-            Get equipped with powerful features for professional QR code management
+            Equípese con potentes funciones para la gestión profesional de
+            códigos QR
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
           {benefits.map((benefit) => (
             <div
@@ -43,13 +49,17 @@ export function Benefits() {
                     width={48}
                     height={48}
                     className="w-full h-full object-contain"
-                    style={{ filter: 'brightness(0) invert(1)' }}
+                    style={{ filter: "brightness(0) invert(1)" }}
                   />
                 </div>
               </div>
               <div className="mt-12">
-                <h3 className="text-xl sm:text-2xl font-bold text-text-900 mb-4">{benefit.title}</h3>
-                <p className="text-text-600 leading-relaxed">{benefit.description}</p>
+                <h3 className="text-xl sm:text-2xl font-bold text-text-900 mb-4">
+                  {benefit.title}
+                </h3>
+                <p className="text-text-600 leading-relaxed">
+                  {benefit.description}
+                </p>
               </div>
             </div>
           ))}

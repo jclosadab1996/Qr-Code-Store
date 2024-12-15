@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function RegisterPage() {
   return (
@@ -7,11 +7,14 @@ export default function RegisterPage() {
       <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-xl shadow-sm">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-text-900">
-            Create your account
+            Crea tu cuenta
           </h2>
           <p className="mt-2 text-center text-sm text-text-600">
-            Already have an account?{' '}
-            <Link href="/login" className="font-medium text-primary-600 hover:text-primary-500">
+            ¿Ya tienes una cuenta?{" "}
+            <Link
+              href="/login"
+              className="font-medium text-primary-600 hover:text-primary-500"
+            >
               Sign in
             </Link>
           </p>
@@ -19,8 +22,11 @@ export default function RegisterPage() {
         <form className="mt-8 space-y-6">
           <div className="rounded-md shadow-sm space-y-4">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-text-700">
-                Full name
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-text-700"
+              >
+                Nombre Completo
               </label>
               <input
                 id="name"
@@ -31,8 +37,11 @@ export default function RegisterPage() {
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-text-700">
-                Email address
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-text-700"
+              >
+                Correo Electronico
               </label>
               <input
                 id="email"
@@ -43,8 +52,11 @@ export default function RegisterPage() {
               />
             </div>
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-text-700">
-                Password
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium text-text-700"
+              >
+                Contraseña
               </label>
               <input
                 id="password"
@@ -65,19 +77,22 @@ export default function RegisterPage() {
               className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-background-300 rounded"
             />
             <label htmlFor="terms" className="ml-2 block text-sm text-text-900">
-              I agree to the{' '}
+              Estoy de acuerdo con el{" "}
               <a href="#" className="text-primary-600 hover:text-primary-500">
-                Terms of Service
-              </a>{' '}
-              and{' '}
+                Condiciones de servicio
+              </a>{" "}
+              Y{" "}
               <a href="#" className="text-primary-600 hover:text-primary-500">
-                Privacy Policy
+                política de privacidad
               </a>
             </label>
           </div>
 
-          <Button type="submit" className="w-full bg-primary-600 hover:bg-primary-700 text-white">
-            Create account
+          <Button
+            type="submit"
+            className="w-full bg-primary-600 hover:bg-primary-700 text-white"
+          >
+            Crear cuenta
           </Button>
         </form>
       </div>

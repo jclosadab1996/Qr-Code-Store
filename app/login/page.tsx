@@ -1,5 +1,5 @@
-import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function LoginPage() {
   return (
@@ -7,20 +7,26 @@ export default function LoginPage() {
       <div className="max-w-md w-full space-y-8 bg-white p-8 rounded-xl shadow-sm">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-text-900">
-            Sign in to your account
+            Inicia Sesión con tu cuenta
           </h2>
           <p className="mt-2 text-center text-sm text-text-600">
-            Or{' '}
-            <Link href="/register" className="font-medium text-primary-600 hover:text-primary-500">
-              create a new account
+            Or{" "}
+            <Link
+              href="/register"
+              className="font-medium text-primary-600 hover:text-primary-500"
+            >
+              Crea una nueva cuenta
             </Link>
           </p>
         </div>
         <form className="mt-8 space-y-6">
           <div className="rounded-md shadow-sm space-y-4">
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-text-700">
-                Email address
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-text-700"
+              >
+                Correo Electronico
               </label>
               <input
                 id="email"
@@ -31,8 +37,11 @@ export default function LoginPage() {
               />
             </div>
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-text-700">
-                Password
+              <label
+                htmlFor="password"
+                className="block text-sm font-medium text-text-700"
+              >
+                Contraseña
               </label>
               <input
                 id="password"
@@ -52,20 +61,29 @@ export default function LoginPage() {
                 type="checkbox"
                 className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-background-300 rounded"
               />
-              <label htmlFor="remember-me" className="ml-2 block text-sm text-text-900">
-                Remember me
+              <label
+                htmlFor="remember-me"
+                className="ml-2 block text-sm text-text-900"
+              >
+                Recuerda me
               </label>
             </div>
 
             <div className="text-sm">
-              <a href="#" className="font-medium text-primary-600 hover:text-primary-500">
-                Forgot your password?
+              <a
+                href="#"
+                className="font-medium text-primary-600 hover:text-primary-500"
+              >
+                Olvidaste tu contraseña?
               </a>
             </div>
           </div>
 
-          <Button type="submit" className="w-full bg-primary-600 hover:bg-primary-700 text-white">
-            Sign in
+          <Button
+            type="submit"
+            className="w-full bg-primary-600 hover:bg-primary-700 text-white"
+          >
+            Inicia sesión
           </Button>
         </form>
       </div>

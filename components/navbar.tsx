@@ -13,6 +13,15 @@ export function Navbar() {
           </Link>
           
           <div className="flex items-center space-x-4">
+            <Link href="/dashboard">
+              <Button 
+                variant="outline" 
+                className="border-primary-200 text-primary-600 hover:bg-primary-50 hover:text-primary-700 hover:border-primary-300 transition-colors"
+              >
+                <span className="mr-2">📊</span>
+                Dashboard
+              </Button>
+            </Link>
             <Link href="/login">
               <Button variant="ghost" className="text-text-600 hover:text-primary-600">
                 Log in
